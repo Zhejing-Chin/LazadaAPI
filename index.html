@@ -8,12 +8,35 @@
 
 <p id="demo"></p>
 
+<p id="myDiv"></p>
 <script>
 
-var url = new URL(window.location.href);
-var c = url.searchParams.get("code");
-document.getElementById("demo").innerHTML = c
-;
+  var url = new URL(window.location.href);
+  var c = url.searchParams.get("code");
+  document.getElementById("demo").innerHTML = c;
+//   var xhttp = new XMLHttpRequest();
+//   xhttp.onreadystatechange = function() {
+//       if (this.readyState == 4 && this.status == 200) {
+//           document.getElementById("myDiv").innerHTML = this.responseText;
+//       }
+//   };
+//   xhttp.open("GET", "https://test123.ap-south-1.amazonaws.com/dev", true);
+//   xhttp.send();
+  
+  
+//    AWS.config.update({region: 'REGION'});
+//    AWS.config.credentials = new AWS.CognitoIdentityCredentials({IdentityPoolId: 'IDENTITY_POOL_ID'});
+//    // Prepare to call Lambda function.
+//    var lambda = new AWS.Lambda({region: 'REGION', apiVersion: '2015-03-31'});
+//    var lazadaAPI = {
+//       FunctionName : 'slotPull',
+//       InvocationType : 'RequestResponse',
+//       LogType : 'None'
+//    };
+
+//    lambda.invoke(lazadaAPI, function(err, data) {
+         
+//       });
 </script>
 
 </body>
