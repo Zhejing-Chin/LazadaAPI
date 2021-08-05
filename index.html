@@ -7,8 +7,11 @@
 <p id="demo"></p>
 
 <script>
-document.getElementById("demo").innerHTML = 
-window.location.href;
+
+var url = new URL(window.location.href);
+var c = url.searchParams.get("c");
+document.getElementById("demo").innerHTML = c
+;
 </script>
 
 </body>
