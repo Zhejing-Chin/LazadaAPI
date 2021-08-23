@@ -4,16 +4,20 @@
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <body>
 
-<h2>Get the current URL</h2>
+<h2>Copy the code</h2>
 
-<p id="demo"></p>
+<p id="demo">code: </p>
+<p id="demo2">shop_id: </p>  
 
 <p id="myDiv"></p>
 <script>
 
   var url = new URL(window.location.href);
   var c = url.searchParams.get("code");
+  var s = url.searchParams.get("shop_id");
+
   document.getElementById("demo").innerHTML = c;
+  document.getElementById("demo2").innerHTML = s;
 //   var xhttp = new XMLHttpRequest();
 //   xhttp.onreadystatechange = function() {
 //       if (this.readyState == 4 && this.status == 200) {
