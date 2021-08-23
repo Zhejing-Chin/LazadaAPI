@@ -6,8 +6,12 @@
 
 <h2>Copy the code</h2>
 
-<p id="demo">code: </p>
+  <p>code: </p>
+<p id="demo"></p>
+  <p>shop_id: </p>
 <p id="demo2">shop_id: </p>  
+  <p>main_account_id: </p>
+<p id="demo3">main_account_id: </p>  
 
 <p id="myDiv"></p>
 <script>
@@ -15,9 +19,11 @@
   var url = new URL(window.location.href);
   var c = url.searchParams.get("code");
   var s = url.searchParams.get("shop_id");
+  var m = url.searchParams.get("main_account_id");
 
   document.getElementById("demo").innerHTML = c;
   document.getElementById("demo2").innerHTML = s;
+  document.getElementById("demo3").innerHTML = m;
 //   var xhttp = new XMLHttpRequest();
 //   xhttp.onreadystatechange = function() {
 //       if (this.readyState == 4 && this.status == 200) {
